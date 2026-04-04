@@ -1,10 +1,16 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X, Palette } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
+  const [isBlue, setIsBlue] = useState(false);
+
+  const toggleTheme = () => {
+    setIsBlue(!isBlue);
+    document.documentElement.classList.toggle('theme-blue');
+  };
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
@@ -54,6 +60,13 @@ const Header = () => {
 
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-3">
+            <button
+              onClick={toggleTheme}
+              className="flex items-center gap-2 px-3 py-2 rounded-full border border-border text-sm font-medium text-muted-foreground hover:text-primary hover:border-primary transition-colors"
+            >
+              <Palette size={16} />
+              {isBlue ? 'Blue' : 'Green'}
+            </button>
             <Button variant="ghost" className="text-base font-semibold hover:text-primary">
               Login
             </Button>
