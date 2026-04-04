@@ -46,6 +46,16 @@
     --sidebar-ring: 142 72% 29%;
   }
 
+  :root.theme-blue {
+    --primary: 217 91% 50%;
+    --primary-foreground: 0 0% 100%;
+    --accent: 217 91% 50%;
+    --accent-foreground: 0 0% 100%;
+    --ring: 217 91% 50%;
+    --sidebar-primary: 217 91% 50%;
+    --sidebar-ring: 217 91% 50%;
+  }
+
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;

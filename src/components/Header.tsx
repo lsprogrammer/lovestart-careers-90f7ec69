@@ -1,10 +1,16 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X, Palette } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
+  const [isBlue, setIsBlue] = useState(false);
+
+  const toggleTheme = () => {
+    setIsBlue(!isBlue);
+    document.documentElement.classList.toggle('theme-blue');
+  };
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
