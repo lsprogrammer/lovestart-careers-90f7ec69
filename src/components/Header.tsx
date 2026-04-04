@@ -60,6 +60,13 @@ const Header = () => {
 
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-3">
+            <button
+              onClick={toggleTheme}
+              className="flex items-center gap-2 px-3 py-2 rounded-full border border-border text-sm font-medium text-muted-foreground hover:text-primary hover:border-primary transition-colors"
+            >
+              <Palette size={16} />
+              {isBlue ? 'Blue' : 'Green'}
+            </button>
             <Button variant="ghost" className="text-base font-semibold hover:text-primary">
               Login
             </Button>
