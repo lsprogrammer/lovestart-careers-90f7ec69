@@ -13,6 +13,17 @@ import EmployerRegister from "./pages/EmployerRegister.tsx";
 import ContactUs from "./pages/ContactUs.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import EmployerDashboard from "./pages/employer/EmployerDashboard.tsx";
+import EmployerProfile from "./pages/employer/EmployerProfile.tsx";
+import EmployerEditProfile from "./pages/employer/EmployerEditProfile.tsx";
+import EmployerManageJobs from "./pages/employer/EmployerManageJobs.tsx";
+import EmployerCreateJob from "./pages/employer/EmployerCreateJob.tsx";
+import EmployerPaymentHistory from "./pages/employer/EmployerPaymentHistory.tsx";
+import EmployerFavourites from "./pages/employer/EmployerFavourites.tsx";
+import EmployerImportJobseekers from "./pages/employer/EmployerImportJobseekers.tsx";
+import EmployerChangePassword from "./pages/employer/EmployerChangePassword.tsx";
+import EmployerChangeLogo from "./pages/employer/EmployerChangeLogo.tsx";
+import EmployerMailHistory from "./pages/employer/EmployerMailHistory.tsx";
 
 const queryClient = new QueryClient();
 
