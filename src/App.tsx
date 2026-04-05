@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import SearchJob from "./pages/SearchJob.tsx";
+import JobDetail from "./pages/JobDetail.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -19,6 +20,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="/search-job" element={<SearchJob />} />
+          <Route path="/job-description/:slug" element={<JobDetail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
