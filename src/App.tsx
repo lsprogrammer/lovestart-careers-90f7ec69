@@ -20,6 +20,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="/search-job" element={<SearchJob />} />
+          <Route path="/job-description/:slug" element={<JobDetail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
