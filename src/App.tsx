@@ -24,6 +24,23 @@ import EmployerImportJobseekers from "./pages/employer/EmployerImportJobseekers.
 import EmployerChangePassword from "./pages/employer/EmployerChangePassword.tsx";
 import EmployerChangeLogo from "./pages/employer/EmployerChangeLogo.tsx";
 import EmployerMailHistory from "./pages/employer/EmployerMailHistory.tsx";
+import JobseekerDashboard from "./pages/jobseeker/JobseekerDashboard.tsx";
+import JobseekerProfile from "./pages/jobseeker/JobseekerProfile.tsx";
+import JobseekerEditProfile from "./pages/jobseeker/JobseekerEditProfile.tsx";
+import JobseekerEducation from "./pages/jobseeker/JobseekerEducation.tsx";
+import JobseekerExperience from "./pages/jobseeker/JobseekerExperience.tsx";
+import JobseekerProfessionalReg from "./pages/jobseeker/JobseekerProfessionalReg.tsx";
+import JobseekerUploadVideoCV from "./pages/jobseeker/JobseekerUploadVideoCV.tsx";
+import JobseekerMakeCV from "./pages/jobseeker/JobseekerMakeCV.tsx";
+import JobseekerCVDocuments from "./pages/jobseeker/JobseekerCVDocuments.tsx";
+import JobseekerPaymentHistory from "./pages/jobseeker/JobseekerPaymentHistory.tsx";
+import JobseekerManageAlerts from "./pages/jobseeker/JobseekerManageAlerts.tsx";
+import JobseekerSavedJobs from "./pages/jobseeker/JobseekerSavedJobs.tsx";
+import JobseekerAppliedJobs from "./pages/jobseeker/JobseekerAppliedJobs.tsx";
+import JobseekerSearchJobs from "./pages/jobseeker/JobseekerSearchJobs.tsx";
+import JobseekerMailHistory from "./pages/jobseeker/JobseekerMailHistory.tsx";
+import JobseekerChangePassword from "./pages/jobseeker/JobseekerChangePassword.tsx";
+import JobseekerChangePhoto from "./pages/jobseeker/JobseekerChangePhoto.tsx";
 
 const queryClient = new QueryClient();
 
