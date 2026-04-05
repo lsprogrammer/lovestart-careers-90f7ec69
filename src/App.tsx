@@ -28,6 +28,7 @@ const App = () => (
           <Route path="/user/jobseeker-login" element={<JobseekerLogin />} />
           <Route path="/user/jobseeker-registration" element={<JobseekerRegister />} />
           <Route path="/user/employer-login" element={<EmployerLogin />} />
+          <Route path="/user/employer-registration" element={<EmployerRegister />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
