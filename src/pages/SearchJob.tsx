@@ -86,7 +86,7 @@ const SearchJob = () => {
       </section>
 
       {/* Search Filters */}
-      <section className="container mx-auto px-4 lg:px-8 -mt-8">
+      <section className="container mx-auto px-4 lg:px-8 mt-6">
         <div className="bg-card rounded-2xl shadow-xl border border-border p-5 md:p-6 flex flex-col md:flex-row gap-3 items-end">
           <div className="flex-1 w-full">
             <label className="text-xs font-semibold text-muted-foreground mb-1 block">Keyword</label>
