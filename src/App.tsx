@@ -44,6 +44,19 @@ const App = () => (
           <Route path="/user/employer-registration" element={<EmployerRegister />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/employer/dashboard" element={<EmployerDashboard />}>
+            <Route index element={<EmployerProfile />} />
+            <Route path="profile" element={<EmployerProfile />} />
+            <Route path="edit-profile" element={<EmployerEditProfile />} />
+            <Route path="manage-jobs" element={<EmployerManageJobs />} />
+            <Route path="create-job" element={<EmployerCreateJob />} />
+            <Route path="payment-history" element={<EmployerPaymentHistory />} />
+            <Route path="favourites" element={<EmployerFavourites />} />
+            <Route path="import-jobseekers" element={<EmployerImportJobseekers />} />
+            <Route path="change-password" element={<EmployerChangePassword />} />
+            <Route path="change-logo" element={<EmployerChangeLogo />} />
+            <Route path="mail-history" element={<EmployerMailHistory />} />
+          </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
