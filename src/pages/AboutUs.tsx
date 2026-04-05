@@ -2,7 +2,9 @@ import { Users, Target, Heart, TrendingUp, FileText, Star, Briefcase } from 'luc
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
-import aboutCollage from '@/assets/about-collage.jpg';
+import aboutBanner from '@/assets/about-banner.jpg';
+import aboutSearch from '@/assets/about-search.jpg';
+import aboutHiring from '@/assets/about-hiring.jpg';
 
 const stats = [
   { value: '250M', label: 'Unique monthly visitors', icon: Users },
@@ -51,46 +53,65 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Image Collage */}
-      <section className="container mx-auto px-4 lg:px-8 py-16">
-        <div className="rounded-2xl overflow-hidden shadow-lg">
+      {/* Banner Image */}
+      <section className="container mx-auto px-4 lg:px-8 py-10">
+        <div className="rounded-xl overflow-hidden">
           <img
-            src={aboutCollage}
-            alt="Our team at work"
-            className="w-full h-[320px] md:h-[400px] object-cover"
-            width={1200}
-            height={600}
+            src={aboutBanner}
+            alt="Our team collaborating"
+            className="w-full h-[200px] md:h-[260px] object-cover"
+            width={1920}
+            height={512}
           />
         </div>
       </section>
 
       {/* Stats */}
-      <section className="container mx-auto px-4 lg:px-8 pb-16">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <section className="container mx-auto px-4 lg:px-8 pb-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {stats.map((stat) => (
             <div key={stat.label} className="text-center">
-              <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 mb-4">
-                <stat.icon className="w-7 h-7 text-primary" />
-              </div>
-              <p className="text-4xl font-extrabold text-primary mb-1">{stat.value}</p>
+              <p className="text-3xl md:text-4xl font-extrabold text-primary mb-1">{stat.value}</p>
               <p className="text-muted-foreground text-sm">{stat.label}</p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Description */}
+      {/* Content with inline images */}
       <section className="border-t border-border">
-        <div className="container mx-auto px-4 lg:px-8 py-16 max-w-3xl text-center space-y-6">
-          <p className="text-muted-foreground leading-relaxed">
-            We give you all the tools you need to easily find the right candidates for your company or work.
-          </p>
-          <p className="text-muted-foreground leading-relaxed">
-            Create your company profile and post jobs and find right candidates. We make it easy for you to find candidates by providing useful search and filter options.
-          </p>
-          <p className="text-muted-foreground leading-relaxed">
-            Received applications on your job? Notify candidates about their application status by changing status from the app only. Want to send custom email to all or single candidate? Just use this app and let us do all the work.
-          </p>
+        <div className="container mx-auto px-4 lg:px-8 py-14">
+          {/* Block 1: text left, image right */}
+          <div className="grid md:grid-cols-2 gap-10 items-center mb-14">
+            <div className="space-y-4">
+              <h2 className="text-2xl font-bold text-foreground">Find the Right Candidates</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                We give you all the tools you need to easily find the right candidates for your company or work.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Create your company profile and post jobs and find the right candidates. We make it easy for you to find candidates by providing useful search and filter options.
+              </p>
+            </div>
+            <div className="rounded-xl overflow-hidden">
+              <img src={aboutSearch} alt="Searching for jobs" className="w-full h-[240px] object-cover" loading="lazy" width={640} height={512} />
+            </div>
+          </div>
+
+          {/* Block 2: image left, text right */}
+          <div className="grid md:grid-cols-2 gap-10 items-center">
+            <div className="rounded-xl overflow-hidden md:order-1 order-2">
+              <img src={aboutHiring} alt="Managing applications" className="w-full h-[240px] object-cover" loading="lazy" width={640} height={512} />
+            </div>
+            <div className="space-y-4 md:order-2 order-1">
+              <h2 className="text-2xl font-bold text-foreground">Manage Applications Easily</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Received applications on your job? Notify candidates about their application status by changing status from the app only.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Want to send custom email to all or single candidate? Just use this app and let us do all the work.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
