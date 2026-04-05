@@ -1,4 +1,4 @@
-import { Search, MapPin, Upload, Briefcase } from 'lucide-react';
+import { Search, MapPin, Upload } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
 
