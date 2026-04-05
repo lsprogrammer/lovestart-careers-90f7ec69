@@ -1,4 +1,4 @@
-import { Search, MapPin, Upload, Briefcase } from 'lucide-react';
+import { Search, MapPin, Upload } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
 
@@ -6,7 +6,7 @@ const HeroSection = () => {
   const [activeTab, setActiveTab] = useState<'search' | 'upload'>('search');
 
   return (
-    <section className="relative min-h-[600px] flex items-center pt-20 overflow-hidden"
+    <section className="relative min-h-[480px] flex items-center pt-20 overflow-hidden"
       style={{
         background: 'linear-gradient(135deg, hsl(142 72% 29% / 0.05) 0%, hsl(142 72% 29% / 0.12) 50%, hsl(210 40% 96% / 0.8) 100%)',
       }}
@@ -15,20 +15,15 @@ const HeroSection = () => {
       <div className="absolute top-20 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-72 h-72 bg-primary/8 rounded-full blur-3xl" />
 
-      <div className="container mx-auto px-4 lg:px-8 py-16 lg:py-24 relative z-10">
+      <div className="container mx-auto px-4 lg:px-8 py-10 lg:py-14 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-6">
-            <Briefcase size={16} />
-            #1 Job Portal Platform
-          </div>
-
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-foreground leading-tight mb-6 tracking-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-foreground leading-tight mb-4 tracking-tight">
             Find Top <span className="text-primary">Candidates</span>
             <br />
             & Dream Jobs
           </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
             Connecting thousands of employers with talented job seekers.
             Your next opportunity is just a search away.
           </p>
