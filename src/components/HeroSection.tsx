@@ -6,7 +6,7 @@ const HeroSection = () => {
   const [activeTab, setActiveTab] = useState<'search' | 'upload'>('search');
 
   return (
-    <section className="relative min-h-[600px] flex items-center pt-20 overflow-hidden"
+    <section className="relative min-h-[480px] flex items-center pt-20 overflow-hidden"
       style={{
         background: 'linear-gradient(135deg, hsl(142 72% 29% / 0.05) 0%, hsl(142 72% 29% / 0.12) 50%, hsl(210 40% 96% / 0.8) 100%)',
       }}
