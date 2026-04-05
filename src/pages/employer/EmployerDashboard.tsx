@@ -39,7 +39,6 @@ const EmployerDashboard = () => {
             <Outlet />
           </main>
           <Footer />
-          </main>
         </div>
       </div>
     </SidebarProvider>
