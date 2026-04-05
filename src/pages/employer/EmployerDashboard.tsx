@@ -4,6 +4,7 @@ import { EmployerSidebar } from '@/components/employer/EmployerSidebar';
 import { Bell } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import Footer from '@/components/Footer';
 
 const EmployerDashboard = () => {
   return (
@@ -37,6 +38,7 @@ const EmployerDashboard = () => {
           <main className="flex-1 p-4 md:p-6 lg:p-8">
             <Outlet />
           </main>
+          <Footer />
         </div>
       </div>
     </SidebarProvider>

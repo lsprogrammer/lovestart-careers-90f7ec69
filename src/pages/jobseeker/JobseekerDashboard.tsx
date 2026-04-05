@@ -1,4 +1,5 @@
 import { Outlet } from 'react-router-dom';
+import Footer from '@/components/Footer';
 import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar';
 import { JobseekerSidebar } from '@/components/jobseeker/JobseekerSidebar';
 import { Bell } from 'lucide-react';
@@ -35,6 +36,7 @@ const JobseekerDashboard = () => {
           <main className="flex-1 p-4 md:p-6 lg:p-8">
             <Outlet />
           </main>
+          <Footer />
         </div>
       </div>
     </SidebarProvider>
