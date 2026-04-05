@@ -74,6 +74,25 @@ const App = () => (
             <Route path="change-logo" element={<EmployerChangeLogo />} />
             <Route path="mail-history" element={<EmployerMailHistory />} />
           </Route>
+          <Route path="/jobseeker/dashboard" element={<JobseekerDashboard />}>
+            <Route index element={<JobseekerProfile />} />
+            <Route path="profile" element={<JobseekerProfile />} />
+            <Route path="edit-profile" element={<JobseekerEditProfile />} />
+            <Route path="education" element={<JobseekerEducation />} />
+            <Route path="experience" element={<JobseekerExperience />} />
+            <Route path="professional-registration" element={<JobseekerProfessionalReg />} />
+            <Route path="upload-video-cv" element={<JobseekerUploadVideoCV />} />
+            <Route path="make-cv" element={<JobseekerMakeCV />} />
+            <Route path="cv-documents" element={<JobseekerCVDocuments />} />
+            <Route path="payment-history" element={<JobseekerPaymentHistory />} />
+            <Route path="manage-alerts" element={<JobseekerManageAlerts />} />
+            <Route path="saved-jobs" element={<JobseekerSavedJobs />} />
+            <Route path="applied-jobs" element={<JobseekerAppliedJobs />} />
+            <Route path="search-jobs" element={<JobseekerSearchJobs />} />
+            <Route path="mail-history" element={<JobseekerMailHistory />} />
+            <Route path="change-password" element={<JobseekerChangePassword />} />
+            <Route path="change-photo" element={<JobseekerChangePhoto />} />
+          </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
