@@ -37,7 +37,6 @@ const JobseekerDashboard = () => {
             <Outlet />
           </main>
           <Footer />
-          </main>
         </div>
       </div>
     </SidebarProvider>
