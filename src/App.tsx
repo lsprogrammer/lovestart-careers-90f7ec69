@@ -8,6 +8,7 @@ import SearchJob from "./pages/SearchJob.tsx";
 import JobDetail from "./pages/JobDetail.tsx";
 import JobseekerLogin from "./pages/JobseekerLogin.tsx";
 import JobseekerRegister from "./pages/JobseekerRegister.tsx";
+import EmployerLogin from "./pages/EmployerLogin.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/job-description/:slug" element={<JobDetail />} />
           <Route path="/user/jobseeker-login" element={<JobseekerLogin />} />
           <Route path="/user/jobseeker-registration" element={<JobseekerRegister />} />
+          <Route path="/user/employer-login" element={<EmployerLogin />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
