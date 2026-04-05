@@ -42,7 +42,7 @@ const ContactUs = () => {
       </section>
 
       {/* Contact Info Cards */}
-      <section className="container mx-auto px-4 lg:px-8 -mt-8">
+      <section className="container mx-auto px-4 lg:px-8 mt-8">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {contactInfo.map(({ icon: Icon, label, value, sub }) => (
             <div key={label} className="bg-card rounded-2xl border border-border p-6 shadow-sm hover:shadow-md hover:border-primary/30 transition-all duration-300 text-center group">
