@@ -66,7 +66,7 @@ export function JobseekerSidebar() {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <Sidebar collapsible="icon" className="border-r border-border">
+    <Sidebar collapsible="icon" layout="sticky" className="border-r border-border">
       <SidebarContent className="pt-4">
         {!collapsed && (
           <div className="px-4 pb-4 mb-2 border-b border-border">
