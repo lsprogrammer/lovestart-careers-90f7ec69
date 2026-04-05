@@ -24,6 +24,23 @@ import EmployerImportJobseekers from "./pages/employer/EmployerImportJobseekers.
 import EmployerChangePassword from "./pages/employer/EmployerChangePassword.tsx";
 import EmployerChangeLogo from "./pages/employer/EmployerChangeLogo.tsx";
 import EmployerMailHistory from "./pages/employer/EmployerMailHistory.tsx";
+import JobseekerDashboard from "./pages/jobseeker/JobseekerDashboard.tsx";
+import JobseekerProfile from "./pages/jobseeker/JobseekerProfile.tsx";
+import JobseekerEditProfile from "./pages/jobseeker/JobseekerEditProfile.tsx";
+import JobseekerEducation from "./pages/jobseeker/JobseekerEducation.tsx";
+import JobseekerExperience from "./pages/jobseeker/JobseekerExperience.tsx";
+import JobseekerProfessionalReg from "./pages/jobseeker/JobseekerProfessionalReg.tsx";
+import JobseekerUploadVideoCV from "./pages/jobseeker/JobseekerUploadVideoCV.tsx";
+import JobseekerMakeCV from "./pages/jobseeker/JobseekerMakeCV.tsx";
+import JobseekerCVDocuments from "./pages/jobseeker/JobseekerCVDocuments.tsx";
+import JobseekerPaymentHistory from "./pages/jobseeker/JobseekerPaymentHistory.tsx";
+import JobseekerManageAlerts from "./pages/jobseeker/JobseekerManageAlerts.tsx";
+import JobseekerSavedJobs from "./pages/jobseeker/JobseekerSavedJobs.tsx";
+import JobseekerAppliedJobs from "./pages/jobseeker/JobseekerAppliedJobs.tsx";
+import JobseekerSearchJobs from "./pages/jobseeker/JobseekerSearchJobs.tsx";
+import JobseekerMailHistory from "./pages/jobseeker/JobseekerMailHistory.tsx";
+import JobseekerChangePassword from "./pages/jobseeker/JobseekerChangePassword.tsx";
+import JobseekerChangePhoto from "./pages/jobseeker/JobseekerChangePhoto.tsx";
 
 const queryClient = new QueryClient();
 
@@ -56,6 +73,25 @@ const App = () => (
             <Route path="change-password" element={<EmployerChangePassword />} />
             <Route path="change-logo" element={<EmployerChangeLogo />} />
             <Route path="mail-history" element={<EmployerMailHistory />} />
+          </Route>
+          <Route path="/jobseeker/dashboard" element={<JobseekerDashboard />}>
+            <Route index element={<JobseekerProfile />} />
+            <Route path="profile" element={<JobseekerProfile />} />
+            <Route path="edit-profile" element={<JobseekerEditProfile />} />
+            <Route path="education" element={<JobseekerEducation />} />
+            <Route path="experience" element={<JobseekerExperience />} />
+            <Route path="professional-registration" element={<JobseekerProfessionalReg />} />
+            <Route path="upload-video-cv" element={<JobseekerUploadVideoCV />} />
+            <Route path="make-cv" element={<JobseekerMakeCV />} />
+            <Route path="cv-documents" element={<JobseekerCVDocuments />} />
+            <Route path="payment-history" element={<JobseekerPaymentHistory />} />
+            <Route path="manage-alerts" element={<JobseekerManageAlerts />} />
+            <Route path="saved-jobs" element={<JobseekerSavedJobs />} />
+            <Route path="applied-jobs" element={<JobseekerAppliedJobs />} />
+            <Route path="search-jobs" element={<JobseekerSearchJobs />} />
+            <Route path="mail-history" element={<JobseekerMailHistory />} />
+            <Route path="change-password" element={<JobseekerChangePassword />} />
+            <Route path="change-photo" element={<JobseekerChangePhoto />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
