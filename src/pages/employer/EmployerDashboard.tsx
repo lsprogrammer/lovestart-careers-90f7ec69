@@ -4,6 +4,7 @@ import { EmployerSidebar } from '@/components/employer/EmployerSidebar';
 import { Bell } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import Footer from '@/components/Footer';
 
 const EmployerDashboard = () => {
   return (
