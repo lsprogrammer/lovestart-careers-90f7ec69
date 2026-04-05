@@ -70,13 +70,18 @@ const SearchJob = () => {
 
       {/* Page Banner */}
       <section className="pt-20">
-        <div className="container mx-auto px-4 lg:px-8 py-5 flex items-center justify-between border-b border-border">
-          <h1 className="text-2xl font-bold text-foreground">Jobs</h1>
-          <nav className="text-sm text-muted-foreground">
-            <a href="/" className="hover:text-primary transition-colors">Home</a>
-            <span className="mx-1.5 text-border">/</span>
-            <span className="text-foreground font-medium">Jobs</span>
-          </nav>
+        <div className="bg-primary/5 border-b border-primary/10">
+          <div className="container mx-auto px-4 lg:px-8 py-4 flex items-center justify-between">
+            <h1 className="text-xl font-bold text-foreground flex items-center gap-2">
+              <Briefcase size={20} className="text-primary" />
+              Jobs
+            </h1>
+            <nav className="text-sm text-muted-foreground">
+              <a href="/" className="hover:text-primary transition-colors">Home</a>
+              <span className="mx-1.5">/</span>
+              <span className="text-primary font-medium">Jobs</span>
+            </nav>
+          </div>
         </div>
       </section>
 
