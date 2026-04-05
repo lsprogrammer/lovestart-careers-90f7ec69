@@ -70,18 +70,23 @@ const SearchJob = () => {
 
       {/* Page Banner */}
       <section className="pt-20">
-        <div className="container mx-auto px-4 lg:px-8 py-5 flex items-center justify-between border-b border-border">
-          <h1 className="text-2xl font-bold text-foreground">Jobs</h1>
-          <nav className="text-sm text-muted-foreground">
-            <a href="/" className="hover:text-primary transition-colors">Home</a>
-            <span className="mx-1.5 text-border">/</span>
-            <span className="text-foreground font-medium">Jobs</span>
-          </nav>
+        <div className="bg-primary/5 border-b border-primary/10">
+          <div className="container mx-auto px-4 lg:px-8 py-4 flex items-center justify-between">
+            <h1 className="text-xl font-bold text-foreground flex items-center gap-2">
+              <Briefcase size={20} className="text-primary" />
+              Jobs
+            </h1>
+            <nav className="text-sm text-muted-foreground">
+              <a href="/" className="hover:text-primary transition-colors">Home</a>
+              <span className="mx-1.5">/</span>
+              <span className="text-primary font-medium">Jobs</span>
+            </nav>
+          </div>
         </div>
       </section>
 
       {/* Search Filters */}
-      <section className="container mx-auto px-4 lg:px-8 -mt-8">
+      <section className="container mx-auto px-4 lg:px-8 mt-6">
         <div className="bg-card rounded-2xl shadow-xl border border-border p-5 md:p-6 flex flex-col md:flex-row gap-3 items-end">
           <div className="flex-1 w-full">
             <label className="text-xs font-semibold text-muted-foreground mb-1 block">Keyword</label>
