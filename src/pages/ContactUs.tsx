@@ -24,18 +24,19 @@ const ContactUs = () => {
     <div className="min-h-screen bg-background">
       <Header />
 
-      {/* Hero Banner */}
-      <section className="bg-gradient-to-br from-primary/10 via-primary/5 to-background pt-32 pb-16">
-        <div className="container mx-auto px-4 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-6">
-            <MessageSquare size={16} />
-            Get In Touch
-          </div>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-foreground mb-4">Contact Us</h1>
-          <div className="flex items-center justify-center gap-2 text-muted-foreground">
-            <Link to="/" className="hover:text-primary transition-colors">Home</Link>
-            <ArrowRight size={14} />
-            <span className="text-primary font-medium">Contact Us</span>
+      {/* Page Banner */}
+      <section className="pt-20">
+        <div className="bg-primary/5 border-b border-primary/10">
+          <div className="container mx-auto px-4 lg:px-8 py-4 flex items-center justify-between">
+            <h1 className="text-xl font-bold text-foreground flex items-center gap-2">
+              <MessageSquare size={20} className="text-primary" />
+              Contact Us
+            </h1>
+            <nav className="text-sm text-muted-foreground">
+              <Link to="/" className="hover:text-primary transition-colors">Home</Link>
+              <span className="mx-1.5">/</span>
+              <span className="text-primary font-medium">Contact Us</span>
+            </nav>
           </div>
         </div>
       </section>
