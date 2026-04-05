@@ -45,12 +45,6 @@ const JobseekerLogin = () => {
           {/* Right – Login Form */}
           <div className="p-8 sm:p-10 flex flex-col justify-center">
             <div className="mb-8">
-              <div className="flex items-center gap-2 mb-6">
-                <div className="w-9 h-9 bg-primary rounded-lg flex items-center justify-center">
-                  <span className="text-primary-foreground font-black text-sm">JS</span>
-                </div>
-                <span className="text-xl font-extrabold tracking-tight text-foreground">Jobber</span>
-              </div>
               <h1 className="text-2xl font-bold text-foreground">Jobseeker Login</h1>
               <p className="text-muted-foreground text-sm mt-1">Enter your credentials to continue</p>
             </div>
