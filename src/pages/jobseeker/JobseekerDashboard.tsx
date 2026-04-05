@@ -1,4 +1,5 @@
 import { Outlet } from 'react-router-dom';
+import Footer from '@/components/Footer';
 import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar';
 import { JobseekerSidebar } from '@/components/jobseeker/JobseekerSidebar';
 import { Bell } from 'lucide-react';
