@@ -9,6 +9,7 @@ import JobDetail from "./pages/JobDetail.tsx";
 import JobseekerLogin from "./pages/JobseekerLogin.tsx";
 import JobseekerRegister from "./pages/JobseekerRegister.tsx";
 import EmployerLogin from "./pages/EmployerLogin.tsx";
+import EmployerRegister from "./pages/EmployerRegister.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
