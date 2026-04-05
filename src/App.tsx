@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import SearchJob from "./pages/SearchJob.tsx";
 import JobDetail from "./pages/JobDetail.tsx";
+import JobseekerLogin from "./pages/JobseekerLogin.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -21,6 +22,7 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="/search-job" element={<SearchJob />} />
           <Route path="/job-description/:slug" element={<JobDetail />} />
+          <Route path="/user/jobseeker-login" element={<JobseekerLogin />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
