@@ -43,6 +43,7 @@ import JobseekerChangePassword from "./pages/jobseeker/JobseekerChangePassword.t
 import JobseekerChangePhoto from "./pages/jobseeker/JobseekerChangePhoto.tsx";
 import AdminDashboardLayout from "./pages/admin/AdminDashboard.tsx";
 import AdminHome from "./pages/admin/AdminHome.tsx";
+import AdminSectionPage from "./pages/admin/AdminSectionPage.tsx";
 
 const queryClient = new QueryClient();
 
