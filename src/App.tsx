@@ -95,6 +95,9 @@ const App = () => (
             <Route path="change-password" element={<JobseekerChangePassword />} />
             <Route path="change-photo" element={<JobseekerChangePhoto />} />
           </Route>
+          <Route path="/admin/dashboard" element={<AdminDashboardLayout />}>
+            <Route index element={<AdminHome />} />
+          </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
