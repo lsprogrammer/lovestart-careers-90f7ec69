@@ -98,6 +98,25 @@ const App = () => (
           </Route>
           <Route path="/admin/dashboard" element={<AdminDashboardLayout />}>
             <Route index element={<AdminHome />} />
+            <Route path="configurations/change-username" element={<AdminSectionPage />} />
+            <Route path="configurations/change-password" element={<AdminSectionPage />} />
+            <Route path="configurations/change-email" element={<AdminSectionPage />} />
+            <Route path="configurations/security-questions" element={<AdminSectionPage />} />
+            <Route path="configurations/manage-plans" element={<AdminSectionPage />} />
+            <Route path="configurations/contact-address" element={<AdminSectionPage />} />
+            <Route path="configurations/slogan-text" element={<AdminSectionPage />} />
+            <Route path="configurations/change-logo" element={<AdminSectionPage />} />
+            <Route path="settings/site" element={<AdminSectionPage />} />
+            <Route path="settings/payment" element={<AdminSectionPage />} />
+            <Route path="employers" element={<AdminSectionPage />} />
+            <Route path="employers/pending" element={<AdminSectionPage />} />
+            <Route path="jobseekers" element={<AdminSectionPage />} />
+            <Route path="jobseekers/pending" element={<AdminSectionPage />} />
+            <Route path="categories" element={<AdminSectionPage />} />
+            <Route path="categories/sub" element={<AdminSectionPage />} />
+            <Route path="swear-words" element={<AdminSectionPage />} />
+            <Route path="skills" element={<AdminSectionPage />} />
+            <Route path="designations" element={<AdminSectionPage />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
