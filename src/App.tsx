@@ -41,6 +41,8 @@ import JobseekerSearchJobs from "./pages/jobseeker/JobseekerSearchJobs.tsx";
 import JobseekerMailHistory from "./pages/jobseeker/JobseekerMailHistory.tsx";
 import JobseekerChangePassword from "./pages/jobseeker/JobseekerChangePassword.tsx";
 import JobseekerChangePhoto from "./pages/jobseeker/JobseekerChangePhoto.tsx";
+import AdminDashboardLayout from "./pages/admin/AdminDashboard.tsx";
+import AdminHome from "./pages/admin/AdminHome.tsx";
 
 const queryClient = new QueryClient();
 
@@ -92,6 +94,9 @@ const App = () => (
             <Route path="mail-history" element={<JobseekerMailHistory />} />
             <Route path="change-password" element={<JobseekerChangePassword />} />
             <Route path="change-photo" element={<JobseekerChangePhoto />} />
+          </Route>
+          <Route path="/admin/dashboard" element={<AdminDashboardLayout />}>
+            <Route index element={<AdminHome />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
